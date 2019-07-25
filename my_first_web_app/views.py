@@ -14,6 +14,9 @@ def home_page(request):
 def root(request):
     return HttpResponseRedirect('home')
 
+def gallery(request):
+    return HttpResponseRedirect('portfolio')
+
 def gallery_images(request):
     image_urls = []
     for i in range(6):
